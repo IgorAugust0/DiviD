@@ -81,9 +81,9 @@ Antes de executar o aplicativo, você precisa configurar o Node-RED e o Cloudant
 [![Canva Badge](https://img.shields.io/badge/Canva-00C4CC.svg?style=for-the-badge&logo=Canva&logoColor=white)](https://www.canva.com/)
 
 ### Back-End/Server & Database
-[![Node-RED Badge](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)](https://nodered.org/)
+[![Node-RED Badge](https://img.shields.io/badge/NodeRED-8F0000.svg?style=for-the-badge&logo=Node-RED&logoColor=white)](https://nodered.org/)
 [![IBM Cloud Badge](https://img.shields.io/badge/IBM%20Cloud-023C94.svg?style=for-the-badge&logo=IBM&logoColor=white)](https://cloud.ibm.com/)
-[![Cloudant Badge](https://img.shields.io/badge/Cloudant-DA251D.svg?style=for-the-badge&logo=IBM&logoColor=white)](https://www.ibm.com/cloud/cloudant)
+[![Cloudant Badge](https://img.shields.io/badge/Cloudant-43853D.svg?style=for-the-badge&logo=IBM&logoColor=white)](https://www.ibm.com/cloud/cloudant)
 
 ### Versionamento
 ![GitHub Badge](https://img.shields.io/badge/GitHub-181717.svg?style=for-the-badge&logo=GitHub&logoColor=white)
