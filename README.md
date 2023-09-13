@@ -33,7 +33,7 @@ O DiviD é um aplicativo que tem como objetivo facilitar a divisão de despesas 
 
 <!-- ![cover]() -->
 
-> NLW Spacetime é uma aplicação de recordação de memórias, onde o nosso usuário poderá adicionar à uma timeline textos, fotos e vídeos de acontecimentos marcantes da sua vida, organizados por mês e ano.
+> Status do Projeto: Concluído. :heavy_check_mark:
 
 # :information_source: Como Executar
 
