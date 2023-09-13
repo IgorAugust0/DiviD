@@ -31,7 +31,7 @@ O DiviD é um aplicativo que tem como objetivo facilitar a divisão de despesas 
     </a>
 </p>
 
-<!-- ![cover]() -->
+![cover](https://raw.githubusercontent.com/IgorAugust0/IgorAugust0.github.io/main/assets/hackatruck/divid/thumbnail.png)
 
 > Status do Projeto: Concluído. :heavy_check_mark:
 
@@ -75,12 +75,12 @@ Antes de executar o aplicativo, você precisa configurar o Node-RED e o Cloudant
 
 # :rocket: Tecnologias
 
-### Front-End Mobile
+### Front-End
 [![Xcode Badge](https://img.shields.io/badge/Xcode-147EFB.svg?style=for-the-badge&logo=Xcode&logoColor=white)](https://developer.apple.com/xcode/)
 [![Swift UI Badge](https://img.shields.io/badge/Swift%20UI-F05138.svg?style=for-the-badge&logo=Swift&logoColor=white)](https://developer.apple.com/xcode/swiftui/)
 [![Canva Badge](https://img.shields.io/badge/Canva-00C4CC.svg?style=for-the-badge&logo=Canva&logoColor=white)](https://www.canva.com/)
 
-### Back-End/Server & Database
+### Back-End
 [![Node-RED Badge](https://img.shields.io/badge/NodeRED-8F0000.svg?style=for-the-badge&logo=Node-RED&logoColor=white)](https://nodered.org/)
 [![IBM Cloud Badge](https://img.shields.io/badge/IBM%20Cloud-023C94.svg?style=for-the-badge&logo=IBM&logoColor=white)](https://cloud.ibm.com/)
 [![Cloudant Badge](https://img.shields.io/badge/Cloudant-43853D.svg?style=for-the-badge&logo=IBM&logoColor=white)](https://www.ibm.com/cloud/cloudant)
@@ -161,4 +161,4 @@ https://github.com/IgorAugust0/DiviD/assets/79866605/c9a534e7-23ff-437e-9422-ebd
 
 # :memo: Licença
 
-Este projeto está licenciado sob a licença MIT - veja o arquivo de [licença](./LICENSE) para mais detalhes. 🚀
+Este projeto está licenciado sob a licença MIT - veja o arquivo de [licença](./LICENSE) para mais detalhes.
