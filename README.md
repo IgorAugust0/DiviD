@@ -90,9 +90,7 @@ Antes de executar o aplicativo, você precisa configurar o Node-RED e o Cloudant
 
 # :art: Layout
 
-A ser adicionadas. 🚧
-
-<!-- ![mobile]() -->
+https://github.com/IgorAugust0/DiviD/assets/79866605/c9a534e7-23ff-437e-9422-ebd9b173b657
 
 # :computer: Autores
 
