@@ -1,67 +1,166 @@
-# DiviD
+<h1 align="center">
+  <a href="https://github.com/IgorAugust0/NLW-Spacetime"><img src="https://raw.githubusercontent.com/IgorAugust0/IgorAugust0.github.io/main/assets/hackatruck/divid/DiviD%20App%20-%20Hackatruck.png" alt="Markdownify" width="300"></a>
+  <br>
+  DiviD - Divisão de Despesas
+</h1>
 
-https://rogerdudler.github.io/git-guide/index.pt_BR.html
+<p align="center" style="margin-top: 2em;">
+</p>
 
-https://www.canva.com/design/DAFrw0S4PAU/MKYe2NNh__WDrysGbbNrHA/edit
+ <p align="center">
+O DiviD é um aplicativo que tem como objetivo facilitar a divisão de despesas entre amigos, familiares e colegas de trabalho. Com ele, é possível criar grupos de despesas, adicionar membros e registrar as despesas do grupo. O aplicativo se encarrega de calcular o valor que cada membro deve pagar para que todos fiquem quites.
+</p>
 
-https://time.lol/
+<p align="center">
+  <a href="#information_source-como-executar">ℹ️ Como Executar</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#rocket-tecnologias">🚀 Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#art-layout">🎨 Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#computer-autores">💻 Autores</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#memo-licença">📝 Licença</a>
+</p>
 
-<h3> Aplicativo de finalização do curso HackaTruck.</h3>
-    
-<p>Esse aplicativo vem com o propósito de facilitar saídas em grupos, sendo um auxiliador na hora de dividir a conta para ser paga.</p>
-<p> Crie o grupo de pessoas, adicione as despesas feitas no dia, acompanhe a cobrança e pagamentos das dívidas. </p>
+<p align="center">
+    <img src="https://img.shields.io/badge/made%20by-Igor%20Augusto-2ecc71?style=flat-square">
+    <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/igoraugust0/divid?color=3498db&style=flat-square">
+    <img alt="Repository size" src="https://img.shields.io/github/repo-size/igoraugust0/divid?color=e67e22&style=flat-square">
+    <a href="https://github.com/IgorAugust0/divid/commits/main/">
+        <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/igoraugust0/divid?color=9b59b6&style=flat-square">
+    </a>
+    <a href="https://opensource.org/licenses/MIT">
+        <img alt="License" src="https://img.shields.io/badge/license-MIT-e74c3c?style=flat-square">
+    </a>
+</p>
 
-# <h1> BOAS PRÁTICAS </h1>
+<!-- ![cover]() -->
 
-<h3> Comandos: </h3>
+> NLW Spacetime é uma aplicação de recordação de memórias, onde o nosso usuário poderá adicionar à uma timeline textos, fotos e vídeos de acontecimentos marcantes da sua vida, organizados por mês e ano.
 
-<p> git add . </p>
+# :information_source: Como Executar
 
-<p> git commit -m "nome do commit" </p>
+## Clonar o Repositório
 
-<p> git pull origin branch </p>
+```bash
+git clone https://github.com/IgorAugust0/DiviD
+```
 
-<p> git push origin branch </p>
+## :iphone: Pré-requisitos
 
-# Comandos para branch
+Antes de executar o aplicativo, você precisa configurar o Node-RED e o Cloudant da IBM.
 
-<h3> Para criar a nova branch a partir da branch que você está: </h3>
+### Configurar o Node-RED
 
-<p> git branch MinhaNovaBrach </p>
+1. Crie uma conta na IBM, se você ainda não tiver uma.
+2. Acesse o [IBM Cloud](https://cloud.ibm.com/).
+3. No IBM Cloud, configure e implante o Node-RED.
+4. Obtenha a URL de acesso ao Node-RED.
 
-<h3> Para criar a nova branch a partir de uma branch especifica: </h3>
+### Configurar o Cloudant no Node-RED
 
-<p> git branch -c branchEspecifica MinhaNovaBrach </p>
+1. Abra o Node-RED.
+2. Configure as APIs do Cloudant dentro dos fluxos no Node-RED, de acordo com as suas necessidades.
+3. Certifique-se de que o Node-RED pode acessar o Cloudant corretamente.
 
-<h3> Nos dois casos você precisa trocar para a branch criada, commitar e fazer o trancking: </h3>
+## :desktop_computer: Server (Node-RED)
 
-<p> git checkout MinhaNovaBrach </p>
+1. Inicie o servidor Node-RED de acordo com a configuração do seu ambiente.
 
-<p> git commit -m "commit novo" </p>
+## :iphone: Mobile (Xcode)
 
-<p> git push -u origin MinhaNovaBrach </p>
+1. Abra o projeto no Xcode.
+2. Configure o Node-RED e o Cloudant da IBM para que o aplicativo funcione corretamente.
+3. Atualize as URLs de acesso ao Node-RED no arquivo `Retrieve.swift` para que o aplicativo possa acessá-lo.
+4. As rotas de cada URL devem corresponder às rotas definidas no Node-RED, sendo elas as de operações de CRUD, como `GET`, `POST`, `PUT` e `DELETE`.
 
+> ➡️ Há um código de exemplo da estrutura definida da API no arquivo `api-example.json`. Sinta-se à vontade para utilizá-lo como referência e modelo para a sua API.
 
-# Dicas de GIT
-Antes de iniciar os commits no projeto GIT, crie um arquivo .gitignore que irá ignorar arquivos de logs, binários e arquivos com senhas. Você pode encontrar vários modelos na internet, como nesse repositório.
+# :rocket: Tecnologias
 
-Nunca realize commit direto na Main. Essa prática poderá facilmente ocasionar em perca de código quando você atuar em conjunto com outros desenvolvedores. Utilize a criação de branchs.
+### Front-End Mobile
+[![Xcode Badge](https://img.shields.io/badge/Xcode-147EFB.svg?style=for-the-badge&logo=Xcode&logoColor=white)](https://developer.apple.com/xcode/)
+[![Swift UI Badge](https://img.shields.io/badge/Swift%20UI-F05138.svg?style=for-the-badge&logo=Swift&logoColor=white)](https://developer.apple.com/xcode/swiftui/)
+[![Canva Badge](https://img.shields.io/badge/Canva-00C4CC.svg?style=for-the-badge&logo=Canva&logoColor=white)](https://www.canva.com/)
 
-Combine com o time o padrão que deverá ser utilizado para nomes de branchs e commits.
+### Back-End/Server & Database
+[![Node-RED Badge](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)](https://nodered.org/)
+[![IBM Cloud Badge](https://img.shields.io/badge/IBM%20Cloud-023C94.svg?style=for-the-badge&logo=IBM&logoColor=white)](https://cloud.ibm.com/)
+[![Cloudant Badge](https://img.shields.io/badge/Cloudant-DA251D.svg?style=for-the-badge&logo=IBM&logoColor=white)](https://www.ibm.com/cloud/cloudant)
 
-Crie um arquivo readme com versões, regras combinadas, modo de executar e testar o projeto. Você pode usar esse exemplo que eu criei, ou esse que está disponível na web.
+### Versionamento
+![GitHub Badge](https://img.shields.io/badge/GitHub-181717.svg?style=for-the-badge&logo=GitHub&logoColor=white)
 
-Crie uma branch para cada tarefa. Separar as implementações em branchs, facilita a localização de bugs.
+# :art: Layout
 
-Especifique a referência única (número da tarefa, nome da tarefa) no nome da branch ou em cada commit.
+A ser adicionadas. 🚧
 
-Realize pequenos commits, sempre mantendo a ultima versão mais estável para o commit atual.
+<!-- ![mobile]() -->
 
-Seja direto nos commits, pequenas modificações com pequenos comentários. Utilize o imperativo, por exemplo: “Adicionado box-shadow no botão da home”.
+# :computer: Autores
 
-Insira uma referência do tipo de tarefa que está sendo resolvida no branch ou no commit. Por tipos de tarefa entenda: bug, inovação, estudo.
+<table>
+  <tr>
+    <td align="center">
+      <a href="http://github.com/IgorAugust0/">
+        <img src="https://avatars.githubusercontent.com/u/79866605?v=4" width="100px;" alt="Avatar do Igor"/>
+        <br />
+        <sub>
+          <b>Igor Augusto</b>
+        </sub>
+       </a>
+       <br />
+       <a href="" title="Linkedin">@igoraugusto 💻</a>
+       <br />
+    </td>
+    <td align="center">
+      <a href="https://github.com/joaopespindola">
+        <img src="https://avatars.githubusercontent.com/u/95454249?v=4" width="100px;" alt="Avatar do João"/>
+        <br />
+        <sub>
+          <b>João Pedro</b>
+        </sub>
+       </a>
+       <br />
+       <a href="https://github.com/joaopespindola" title="git">@joaopespindola 💻</a>
+       <br />
+    </td>
+    <td align="center">
+      <a href="https://github.com/rodrigozamb">
+        <img src="https://avatars.githubusercontent.com/u/35114990?v=4" width="100px;" alt="Avatar do Rodrigo"/>
+        <br />
+        <sub>
+          <b>Rodrigo Zamboni</b>
+        </sub>
+       </a>
+       <br />
+       <a href="https://github.com/rodrigozamb" title="git">@rodrigozamb 💻</a>
+       <br />
+    </td>
+    <td align="center">
+      <a href="https://github.com/ocamposbio">
+        <img src="https://avatars.githubusercontent.com/u/70704777?v=4" width="100px;" alt="Avatar do Otávio"/>
+        <br />
+        <sub>
+          <b>Otávio Campos</b>
+        </sub>
+       </a>
+       <br />
+       <a href="https://github.com/rodrigozamb" title="git">@ocamposbio 💻</a>
+       <br />
+    </td>
+    <td align="center">
+      <a href="https://github.com/Guilherme0202PM">
+        <img src="https://avatars.githubusercontent.com/u/46054442?v=4" width="100px;" alt="Avatar do Guilherme"/>
+        <br />
+        <sub>
+          <b>Guilherme Pereira</b>
+        </sub>
+       </a>
+       <br />
+       <a href="https://github.com/Guilherme0202PM" title="git">@Guilherme0202PM 💻</a>
+       <br />
+    </td>
+  </tr>
+</table>
 
-Ao criar um PR, resumidamente descreva o que foi implementado. Se não houverem outras ferramentas que descrevam os testes, esse também é um ótimo espaço para descrever todos os cenários de teste.
+# :memo: Licença
 
-
-Sempre utilize o ciclo de kanban, ou seja, aguarde code review e análise do código. Preferencialmente não aprove o seu próprio PR, sempre que possível realize o processo completo.
+Este projeto está licenciado sob a licença MIT - veja o arquivo de [licença](./LICENSE) para mais detalhes. 🚀

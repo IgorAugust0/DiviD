@@ -1,5 +1,3 @@
-//tela 4
-
 import SwiftUI
 struct DetailViewTela4: View {
     var grupo: Grupo
@@ -34,23 +32,33 @@ struct DetailViewTela4: View {
                         .font(.system(size: 35))
                         .fontWeight(.bold)
                         .padding()
-                    Spacer()
                     Label("", systemImage: "gearshape.fill").font(.system(size: 40))
                 }
                 HStack {
-                    Label("\(grupo.integrantes.count)", systemImage: "person.crop.circle.fill").font(.system(size: 30))
-                        Spacer()
-                    Label("", systemImage: "cart.badge.questionmark").font(.system(size: 30))
+                    Label("\(grupo.integrantes.count)", systemImage: "person.crop.circle.fill").font(.system(size: 35))
+                        .padding()
+                    
                     Spacer()
+                    NavigationLink( destination: NovaDespesaView(grupo: grupo)){
+                        Image(systemName: "doc.fill.badge.plus")
+                            .font(.system(size: 40))
+                            .foregroundColor(.black)
+                    }
+                    
+                    
+                    Spacer()
+                    
+                    
                     Text("\(grupo.created_at)").font(.system(size: 20))
+                        .padding()
                 } // Layout de cima
                 
-                Spacer()
+                
                 ScrollView{
                     VStack{
                         ForEach( viewModel.despesas ){ desp in
                             if( grupo.despesas.contains(desp.id)){
-                                NavigationLink(destination: DetailViewTela6(despesa: desp)) {
+                                NavigationLink(destination: DetailViewTela6(grupo: grupo, despesa: desp)) {
                                     
                                     VStack{
                                         
@@ -63,7 +71,7 @@ struct DetailViewTela4: View {
                                     }
                                 }
                             }
-                        }.frame(width: 300, height: 150).foregroundColor(.black).background{Color("Bg")}.cornerRadius(25).bold() //Fim ForEach
+                        }.frame(width: 300, height: 150).foregroundColor(.black).background{Color.gray}.cornerRadius(25) //Fim ForEach
                     }//Fim VStack
                 } //Fim ScrollView
             }//Fim VStack Principal
@@ -74,10 +82,10 @@ struct DetailViewTela4: View {
         } // Fim onAppear
     }
 }
-
-
 struct DetailViewTela4_Previews: PreviewProvider {
     static var previews: some View {
-        DetailViewTela4( grupo: Grupo( id: "1",nome: "Grupo X", integrantes: ["1","2","3"], despesas: ["1","2","3"], created_at: "12/09/2022") )
+        DetailViewTela4( grupo: Grupo( _id: "1", _rev:"1" , nome: "Grupo X", integrantes: ["1","2","3"], despesas: ["1","2","3"], created_at: "12/09/2022") )
     }
 }
+
+
