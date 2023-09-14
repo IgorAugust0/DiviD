@@ -68,7 +68,7 @@ Antes de executar o aplicativo, você precisa configurar o Node-RED e o Cloudant
 
 1. Abra o projeto no Xcode.
 2. Configure o Node-RED e o Cloudant da IBM para que o aplicativo funcione corretamente.
-3. Atualize as URLs de acesso ao Node-RED no arquivo `Retrieve.swift` para que o aplicativo possa acessá-lo.
+3. Atualize as URLs de acesso ao Node-RED no arquivo `ViewModel.swift` para que o aplicativo possa acessá-lo.
 4. As rotas de cada URL devem corresponder às rotas definidas no Node-RED, sendo elas as de operações de CRUD, como `GET`, `POST`, `PUT` e `DELETE`.
 
 > ➡️ Há um código de exemplo da estrutura definida da API no arquivo `api-example.json`. Sinta-se à vontade para utilizá-lo como referência e modelo para a sua API.
